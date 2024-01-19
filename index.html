@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repo Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="userForm" >
+        <label for="username">Github Username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Get Repositories</button>
+    </form>
+    
+    <!-- <div id="loader" style="display: none; justify-content: center; align-items: center; height: 100vh; margin-left: 800px;">Loading...</div> -->
+    <div class="spinner-border text-primary" role="status" id="loader" style="display: none; margin-left: 750px;margin-top: 10px;">
+    </div>
+    
+    <div id="userProfile"></div>
+
+    <div id="repoList"></div>
+    
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination" style="justify-content: center;">
+          <li class="page-item"><a class="page-link" href="#" id="prevPage">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#" id="nextPage">Next</a></li>
+        </ul>
+      </nav>
+    <script src="main.js"></script>
+</body>
+</html>
